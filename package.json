@@ -1,0 +1,42 @@
+{
+  "name": "projet-react-ihm-web",
+  "version": "1.0.0",
+  "description": "Projet IHM WEB du master 2",
+  "main": "jest.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "serve": "live-server --entry-file=./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cedric-coder/Projet_IHM_Web_M2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cedric-coder/Projet_IHM_Web_M2/issues"
+  },
+  "homepage": "https://github.com/Cedric-coder/Projet_IHM_Web_M2#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "live-server": "^1.2.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-bootstrap-validation": "^0.1.11",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0"
+  }
+}

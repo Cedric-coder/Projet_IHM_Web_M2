@@ -38,19 +38,13 @@ export const loadInvoicesFromApi = () => {
 /**
  * Récupère les donnes d'un customers à partir de l'API
  * @param id Correspond à l'id du customer
- * @returns Promise<{id: number, id_customer: number, amount: number, status: boolean}>
+ * @returns Promise<Array<{id: number, id_customer: number, amount: number, status: boolean}>>
  */
 export const loadInvoiceFromApi = (id) => {
-    return fetch(`${SUPABASE_URL}?id=eq.${id}`, {
-        method: "GET",
+    console.log("test");
+    return fetch(`${SUPABASE_URL}?id_customer=eq.${id}`, {
         headers: {
-            "Content-Type": "application/json",
             apiKey: SUPABASE_API_KEY,
-            Prefer: "return=representation",
-        }
-    })
-        .then(response => response.json())
-        // La réponse contenant un tableau de invoices
-        // Nous ne retournons que le premier (et le seul)
-        .then(invoices => invoices[0]);
+        } 
+    }).then(response => response.json())
 }
