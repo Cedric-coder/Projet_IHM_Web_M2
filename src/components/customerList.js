@@ -6,8 +6,8 @@ const CustomerList = (props) => {
     return <>
         <ul>
             {props.tasks.map(item => 
-            <li className="CustomerLine" key={item.id}>
-                <Link to={"/" + item.id} className="buttonStyle fitContent">
+            <Link to={"/" + item.id} className="fullWidth">
+                <li className="CustomerLine fullWidth" key={item.id}>
                     <div className="halfWidth">
                         <label className="CustomerFullName" id={"CustomerFullName-"+item.id}>
                             {item.fullName}
@@ -18,8 +18,8 @@ const CustomerList = (props) => {
                             {item.email}
                         </label>
                     </div>
-                </Link>
-            </li>
+                </li>
+            </Link>
             )}
         </ul>
     </>;

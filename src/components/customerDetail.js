@@ -16,11 +16,12 @@ const CustomerDetail = (props) => {
                         ({item.email})
                     </label>
                 </div>
-                <div>
-                    <Link className="buttonStyle fitContent"  to={"/"}>
+                
+                <Link className="buttonStyle fitContent"  to={"/"}>
+                    <div>
                         Retour aux clients
-                    </Link>
-                </div>
+                    </div>
+                </Link>
         </div>
     </>;
 }
