@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(46, 46, 46);
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: larger;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+      margin: 0%;
+  }
+  
+  #app {
+    background-color: #535353;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 20px 0px rgb(0 0 0 / 50%);
+    height: 80%;
+    width: 60%;
+    color: rgb(255, 255, 255);
+  }
+  
+  main {
+    height: 100%;
+  }
+  
+  h1 {
+    margin-top: 0;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #80808054;
+  }
+  
+  a {
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+    display: flex;
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  form input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-right: 5px;
+  }
+  
+  .buttonStyle {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 0px;
+    padding: 10px;
+  }
+  
+  ul {
+    padding: 5%;
+    overflow-y: scroll;
+    height: 70%;
+    min-height: 70%;
+    background-color: #797777;
+    border-radius:1em;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+
+  li {
+    border-radius: 1em;
+    background-color: rgb(102, 102, 102);
+    margin-bottom: 1%;
+    padding: 10px;
+    display: flex;
+    border: solid #000;
+    border-width: 0px;
+  }
+
+  li:hover{
+    border-width: 2px;
+    padding: 8px;
+  }
+  
+  label {
+    cursor: pointer;
+  }
+
+  .halfWidth{
+    width:50%;
+  }
+
+  .DetailHeader{
+    height: 20%;
+  }
+
+.thirdHeight{
+  height: 33%;
+}
+
+.fitContent{
+  width: fit-content;
+  height: fit-content;
+}
