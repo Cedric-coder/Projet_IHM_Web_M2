@@ -1,11 +1,11 @@
 import React from "react";
-import { Button} from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 
 const CustomerDetail = (props) => {
     const item = props.tasks;
     return <>
-        <div id={"customer-"+item.id}>
+        <div className="DetailHeader" id={"customer-"+item.id}>
                 <div>
                     <h3 id={"customerName-"+item.id}>
                         Fiche de {item.fullName}
@@ -16,9 +16,11 @@ const CustomerDetail = (props) => {
                         ({item.email})
                     </label>
                 </div>
-                <a href="/">
-                    <Button variant="contained"> Retour aux clients </Button>
-                </a>
+                <div>
+                    <Link className="buttonStyle fitContent"  to={"/"}>
+                        Retour aux clients
+                    </Link>
+                </div>
         </div>
     </>;
 }

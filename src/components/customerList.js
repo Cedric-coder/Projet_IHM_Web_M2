@@ -4,17 +4,23 @@ import { Link } from "react-router-dom";
 
 const CustomerList = (props) => {
     return <>
-        <h1>Liste des clients</h1>
         <ul>
-            {props.tasks.map(item => <li className="CustomerLine" key={item.id}>
-                <label className="CustomerFullName" id={"CustomerFullName-"+item.id}>
-                    {item.fullName}
-                </label>
-                <label className="CustomerEmail" id={"CustomerEmail-"+item.id}>
-                    {item.email}
-                </label>
-                <Link to={"/" + item.id}>Détails</Link>
-            </li>)}
+            {props.tasks.map(item => 
+            <li className="CustomerLine" key={item.id}>
+                <Link to={"/" + item.id} className="buttonStyle fitContent">
+                    <div className="halfWidth">
+                        <label className="CustomerFullName" id={"CustomerFullName-"+item.id}>
+                            {item.fullName}
+                        </label>
+                    </div>
+                    <div className="halfWidth">
+                        <label className="CustomerEmail" id={"CustomerEmail-"+item.id}>
+                            {item.email}
+                        </label>
+                    </div>
+                </Link>
+            </li>
+            )}
         </ul>
     </>;
 }

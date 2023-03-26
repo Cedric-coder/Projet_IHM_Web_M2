@@ -31,8 +31,9 @@ export const loadCustomersFromApi = () => {
     return fetch(`${SUPABASE_URL}?order=created_at`, {
         headers: {
             apiKey: SUPABASE_API_KEY,
+            'Content-Type': 'application/json'
         },
-    }).then((response) => response.json())
+    }).then((response) => {console.log(response);return response.json();})
 }
 
 /**

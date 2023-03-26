@@ -14,6 +14,7 @@ const CustomerListPage = () => {
     }, []);
     
     return <>
+        <h1>Liste des clients</h1>
         <CustomerList tasks={state} />
     </>
 }
