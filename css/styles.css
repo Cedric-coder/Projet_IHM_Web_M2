@@ -70,22 +70,27 @@ form select {
   margin-right: 5px;
 }
 
-ul {
+ul , table{
   padding: 5%;
   overflow-y: scroll;
   overflow-x: hidden;
   height: 65%;
+  width: 100%;
   background-color: #797777;
   border-radius: 1em;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-ul li {
+ul li , table tr{
   list-style: none;
 }
 
-li {
+tr{
+  display: flex;
+}
+
+li , tr{
   border-radius: 1em;
   background-color: rgb(102, 102, 102);
   margin-bottom: 1%;
@@ -95,7 +100,7 @@ li {
   border-width: 0px;
 }
 
-li:hover {
+li:hover , tr:hover{
   border-width: 2px;
   padding: 8px;
 }

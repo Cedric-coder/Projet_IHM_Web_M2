@@ -24,7 +24,7 @@ const CustomerCreateForm = (props) => {
             <div className="fullWidth tinyMargin">
                 <input
                     type="text"
-                    name="invoice-amount"
+                    name="fullName"
                     placeholder="Nom Complet"
                     onChange={updateFullName}
                     value={fullName}
@@ -33,7 +33,7 @@ const CustomerCreateForm = (props) => {
             <div className="fullWidth tinyMargin">
                 <input
                     type="email"
-                    name="invoice-email"
+                    name="email"
                     placeholder="email"
                     onChange={updateEmail}
                     value={email}

@@ -12,6 +12,7 @@ const CustomerDetailPage = () => {
     const [stateInvoice, setInvoicesState] = useState([]);
     const params = useParams();
 
+    console.log(params);
     const id = params.id_customer;
 
     useEffect(() => {

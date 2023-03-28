@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 
 const CustomerDetail = (props) => {
+    console.log("aaaaaaaaaaaaaaaa");
+    console.log(props);
     const item = props.tasks;
     return <>
         <div className="DetailHeader" id={"customer-"+item.id}>

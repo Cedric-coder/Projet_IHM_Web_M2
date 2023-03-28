@@ -6,8 +6,8 @@ const SUPABASE_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhY
 
 /**
  * Ajoute un invoice dans l'API
- * @param {{id_customer: number, amount: number, status: boolean}} invoice 
- * @returns Promise<{id: number, id_customer: number, amount: number, status: boolean}>
+ * @param {{id_customer: number, amount: number, status: string}} invoice 
+ * @returns Promise<{id: number, id_customer: number, amount: number, status: string}>
  */
 export const addInvoiceToApi = (invoice) => {
     return fetch(SUPABASE_URL, {
@@ -25,7 +25,7 @@ export const addInvoiceToApi = (invoice) => {
 
 /**
  * Récupère les donnees des invoices à partir de l'API
- * @returns Promise<Array<{id: number, id_customer: number, amount: number, status: boolean}>>
+ * @returns Promise<Array<{id: number, id_customer: number, amount: number, status: string}>>
  */
 export const loadInvoicesFromApi = () => {
     return fetch(`${SUPABASE_URL}?order=created_at`, {
@@ -38,7 +38,7 @@ export const loadInvoicesFromApi = () => {
 /**
  * Récupère les donnes d'un customers à partir de l'API
  * @param id Correspond à l'id du customer
- * @returns Promise<Array<{id: number, id_customer: number, amount: number, status: boolean}>>
+ * @returns Promise<Array<{id: number, id_customer: number, amount: number, status: string}>>
  */
 export const loadInvoiceFromApi = (id) => {
     console.log("fetching invoice");

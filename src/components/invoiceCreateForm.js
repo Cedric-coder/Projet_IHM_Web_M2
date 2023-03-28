@@ -25,7 +25,7 @@ const InvoiceCreateForm = (props) => {
         <form onSubmit={handleSubmit}>
             <input
                 type="number"
-                name="invoice-amount"
+                name="amount"
                 placeholder="Montant de la facture"
                 onChange={updateAmount}
                 required
@@ -33,17 +33,17 @@ const InvoiceCreateForm = (props) => {
                 className="fullWidth tinyMargin"
             />
             <select
-                name="invoice-status"
+                name="status"
                 onChange={updateStatus}
                 required
                 value={"Envoyées"}
                 className="fullWidth tinyMargin"
             >
-                <option value="0">{statusValues[0]}</option>
-                <option value="1">{statusValues[1]}</option>
+                <option value="SENT">{statusValues[0]}</option>
+                <option value="PAID">{statusValues[1]}</option>
             </select>
             <div className="fullWidth tinyMargin">
-                <button type="submit" className="buttonStyle thirdWidth">Ajouter</button>
+                <button type="submit" className="buttonStyle thirdWidth">Enregistrer la facture</button>
             </div>
         </form> 
         <Link className="thirdWidth buttonStyle tinyMargin" to={"/"}>
