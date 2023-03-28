@@ -33,7 +33,7 @@ export const loadCustomersFromApi = () => {
             apiKey: SUPABASE_API_KEY,
             'Content-Type': 'application/json'
         },
-    }).then((response) => {console.log(response);return response.json();})
+    }).then((response) => response.json())
 }
 
 /**

@@ -7,9 +7,9 @@ const CustomerDetail = (props) => {
     return <>
         <div className="DetailHeader" id={"customer-"+item.id}>
                 <div>
-                    <h3 id={"customerName-"+item.id}>
+                    <h1 id={"customerName-"+item.id}>
                         Fiche de {item.fullName}
-                    </h3>
+                    </h1>
                 </div>
                 <div>
                     <label id={"customerMail-"+item.id}> 
@@ -17,7 +17,7 @@ const CustomerDetail = (props) => {
                     </label>
                 </div>
                 
-                <Link className="buttonStyle fitContent"  to={"/"}>
+                <Link className="buttonStyle fitContent tinyMargin"  to={"/"}>
                     <div>
                         Retour aux clients
                     </div>

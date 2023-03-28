@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CustomerDetailPage from "./pages/customerDetailPage";
 import CustomerListPage from "./pages/customerListPage";
 import InvoiceCreatePage from "./pages/invoiceCreatePage";
+import CustomerCreatePage from "./pages/customerCreatePage";
 
 const App = () => {
     return <BrowserRouter>
@@ -17,11 +18,15 @@ const App = () => {
                 element={<CustomerListPage />}
             />
             <Route
-                path="/:id"
+                path="/:id_customer"
                 element={<CustomerDetailPage />}
             />
             <Route
                 path="/create"
+                element={<CustomerCreatePage />}
+            />
+            <Route
+                path="/:id_customer/invoices/add"
                 element={<InvoiceCreatePage />}
             />
         </Routes>
@@ -29,4 +34,4 @@ const App = () => {
 }
 
 // Imprime l'arbre renvoyé par App() dans l'élément <main> du DOM HTML
-ReactDOM.render(<App />, document.querySelector('main'));
+ReactDOM.createRoot(document.querySelector('main')).render(<App />)

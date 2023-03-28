@@ -41,10 +41,10 @@ export const loadInvoicesFromApi = () => {
  * @returns Promise<Array<{id: number, id_customer: number, amount: number, status: boolean}>>
  */
 export const loadInvoiceFromApi = (id) => {
-    console.log("test");
+    console.log("fetching invoice");
     return fetch(`${SUPABASE_URL}?id_customer=eq.${id}`, {
         headers: {
             apiKey: SUPABASE_API_KEY,
         } 
-    }).then(response => response.json())
+    }).then(response => {console.log(response);return response.json();})
 }
