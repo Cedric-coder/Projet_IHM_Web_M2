@@ -7,7 +7,7 @@
     "test": "cd app && ng test",
     "start": "cd app && ng serve --host 0.0.0.0 --disable-host-check --hmr",
     "watch": "webpack --mode development --watch",
-    "serve": "live-server --entry-file=./index.html",
+    "serve": "webpack && live-server --entry-file=./index.html",
     "dev": "webpack --mode development",
     "cy:run": "cypress run",
     "cy:open": "cypress open"
