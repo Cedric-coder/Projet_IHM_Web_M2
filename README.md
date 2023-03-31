@@ -10,7 +10,7 @@ Vous trouverez ici un [semblant de cahier des charges](./CDC.md) qui vous donner
 
 ## Livrable Fournis
 
-Envoyé par mail le lien vers ce dépôt Git.
+Le lien vers ce dépôt Git a été envoyé par mail.
 
 ```bash
 # télécharger votre projet :
@@ -31,4 +31,4 @@ npm run cy:run
 npm run cy:open
 ```
 
-## J'ai été courageux
+## courage était le mot d'ordre
