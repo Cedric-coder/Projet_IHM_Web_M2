@@ -17,7 +17,7 @@ Envoyé par mail le lien vers ce dépôt Git.
 git clone https://github.com/Cedric-coder/Projet_IHM_Web_M2.git
 
 # entrer dans le dossier
-cd votre_application
+cd Projet_IHM_Web_M2
 
 #installer des choses (quand même)
 npm install
