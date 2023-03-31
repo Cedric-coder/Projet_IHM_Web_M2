@@ -14,7 +14,7 @@ Envoyé par mail le lien vers ce dépôt Git.
 
 ```bash
 # télécharger votre projet :
-git clone url_de_votre_projet
+git clone https://github.com/Cedric-coder/Projet_IHM_Web_M2.git
 
 # entrer dans le dossier
 cd votre_application
