@@ -25,7 +25,7 @@ npm install
 # lancer l'application :
 npm run serve
 
-# lancer les tests :
+# lancer les tests (ouvrir un autre terminal):
 npm run cy:run
 # ou
 npm run cy:open
