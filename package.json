@@ -4,8 +4,6 @@
   "description": "Projet IHM WEB de Cédric MASSAT",
   "main": "index.js",
   "scripts": {
-    "test": "cd app && ng test",
-    "start": "cd app && ng serve --host 0.0.0.0 --disable-host-check --hmr",
     "watch": "webpack --mode development --watch",
     "serve": "webpack && live-server --entry-file=./index.html",
     "dev": "webpack --mode development",

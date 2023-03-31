@@ -25,6 +25,7 @@ const CustomerCreateForm = (props) => {
                 <input
                     type="text"
                     name="fullName"
+                    required
                     placeholder="Nom Complet"
                     onChange={updateFullName}
                     value={fullName}
@@ -34,6 +35,7 @@ const CustomerCreateForm = (props) => {
                 <input
                     type="email"
                     name="email"
+                    required
                     placeholder="email"
                     onChange={updateEmail}
                     value={email}

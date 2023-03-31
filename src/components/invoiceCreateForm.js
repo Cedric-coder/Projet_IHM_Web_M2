@@ -3,16 +3,17 @@ import { Link } from "react-router-dom";
 
 
 const InvoiceCreateForm = (props) => {
-    const statusValues = ["Envoyées","Payée"];
     const [amount, setAmount] = useState('');
-    const [status, setStatus] = useState('');
+    const [status, setStatus] = useState('Envoyée');
 
     const updateAmount = (event) => {
         setAmount(event.target.value);
     }
     const updateStatus = (event) => {
-        if(event.target.value < statusValues.length)
-            setStatus(statusValues[event.target.value]);
+        console.log(event.target.value);
+        if(event.target.value == "SENT")
+            setStatus("Envoyée");
+        else setStatus("Payée");
     }
     
     const handleSubmit = (event) => {
@@ -36,11 +37,11 @@ const InvoiceCreateForm = (props) => {
                 name="status"
                 onChange={updateStatus}
                 required
-                value={"Envoyées"}
+                value={status.value}
                 className="fullWidth tinyMargin"
             >
-                <option value="SENT">{statusValues[0]}</option>
-                <option value="PAID">{statusValues[1]}</option>
+                <option value="SENT">Envoyée</option>
+                <option value="PAID">Payée</option>
             </select>
             <div className="fullWidth tinyMargin">
                 <button type="submit" className="buttonStyle thirdWidth">Enregistrer la facture</button>

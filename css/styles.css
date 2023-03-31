@@ -138,6 +138,16 @@ label {
   border-width: 0px;
   padding: 10px;
   font-size: medium;
+  cursor: pointer;
+}
+
+.buttonStyle :hover{
+  transition: 0.3s;
+  color: rgb(189, 189, 189);
+}
+
+button.buttonStyle.thirdWidth :hover{ 
+  color: rgb(226, 2, 2);
 }
 
 .tinyMargin{

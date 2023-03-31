@@ -11,8 +11,6 @@ const CustomerDetailPage = () => {
     const [stateCustomer, setCustState] = useState([]);
     const [stateInvoice, setInvoicesState] = useState([]);
     const params = useParams();
-
-    console.log(params);
     const id = params.id_customer;
 
     useEffect(() => {
@@ -21,7 +19,6 @@ const CustomerDetailPage = () => {
                 setCustState(customer);
                 loadInvoiceFromApi(customer.id)
                     .then((invoices) => {
-                        console.log(invoices);
                         setInvoicesState(invoices);
                     })
             });

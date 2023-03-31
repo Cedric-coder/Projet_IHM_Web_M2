@@ -6,8 +6,6 @@ const InvoiceList = (props) => {
 
     const params = useParams();
     const id_customer = +params.id_customer;
-    console.log(props);
-
     return <>
         <table><tbody>
             {props.tasks.map(item =>
