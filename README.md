@@ -10,14 +10,14 @@ Vous trouverez ici un [semblant de cahier des charges](./CDC.md) qui vous donner
 
 ## Livrable Fournis
 
-Envoyé par mail le lien vers ce dépôt Git.
+Le lien vers ce dépôt Git a été envoyé par mail.
 
 ```bash
 # télécharger votre projet :
 git clone https://github.com/Cedric-coder/Projet_IHM_Web_M2.git
 
 # entrer dans le dossier
-cd votre_application
+cd Projet_IHM_Web_M2
 
 #installer des choses (quand même)
 npm install
@@ -31,4 +31,4 @@ npm run cy:run
 npm run cy:open
 ```
 
-## J'ai été courageux
+## courage était le mot d'ordre
